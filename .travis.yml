@@ -14,6 +14,7 @@ before_script:
 
 script:
 - cd personal-website
+- npm link
 - ng lint
 - ng build --prod --output-path ../docs
 
