@@ -30,7 +30,7 @@ script:
 - ng test --watch=false --progress=false --browsers=ChromeHeadlessCI
 - ng e2e --protractor-config=./e2e/protractor-ci.conf.js
 - ng build --prod --output-path ../docs
-- cd ../docs && echo jamiefinnigan.dev > CNAME
+- cd ../docs && echo jamiefinnigan.dev > CNAME && cp index.html 404.html
 
 deploy:
   provider: pages
