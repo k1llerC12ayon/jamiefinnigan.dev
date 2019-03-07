@@ -16,6 +16,7 @@ script:
 - cd personal-website
 - npm link
 - ng lint
+- ng test
 - ng build --prod --output-path ../docs
 - cd ../docs && echo jamiefinnigan.dev > CNAME
 
