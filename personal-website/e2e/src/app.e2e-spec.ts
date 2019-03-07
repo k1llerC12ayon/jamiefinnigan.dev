@@ -8,7 +8,7 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('page title should be the name of the website', () => {
     page.navigateTo();
     expect(page.getTitleText()).toEqual('jamiefinnigan.dev');
   });
