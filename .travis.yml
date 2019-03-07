@@ -17,6 +17,7 @@ script:
 - npm link
 - ng lint
 - ng build --prod --output-path ../docs
+- cd ../docs && echo jamiefinnigan.dev > CNAME
 
 deploy:
   provider: pages
