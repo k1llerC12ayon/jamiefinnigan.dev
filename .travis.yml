@@ -21,6 +21,7 @@ script:
 deploy:
   provider: pages
   local-dir: docs
+  target-branch: master
   skip-cleanup: true
   github-token: $GITHUB_API_KEY
   keep-history: true
